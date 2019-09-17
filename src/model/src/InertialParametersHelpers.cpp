@@ -119,7 +119,7 @@ bool BBFromExternalShape(ExternalMesh* extMesh, Box& box)
     if (pScene)
     {
         // Extract vector of vertices
-        double scale = 1;
+        double scale = 1.0;
         std::vector<aiVector3D> vertexVector;
         buildMesh(pScene, pScene->mRootNode, scale, vertexVector);
 
